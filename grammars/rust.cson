@@ -145,7 +145,7 @@
   'type': {
     'comment': 'A type'
     'name': 'entity.name.type.rust'
-    'match': '\\b([A-Za-z][_A-Za-z0-9]*|_[_A-Za-z0-9]+)\\b'
+    'match': '\\b([A-Z][_A-Za-z0-9]*|_[_A-Za-z0-9]+)\\b'
   }
   'type_params': {
     'comment': 'Type parameters'
@@ -164,7 +164,7 @@
       { 'include': '#std_types' }
       { 'include': '#std_traits' }
       { 'include': '#type_params' }
-      # { 'include': '#type' }
+      { 'include': '#type' }
     ]
   }
 }
