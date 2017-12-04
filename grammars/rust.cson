@@ -414,6 +414,8 @@
         'match': '\bfn\b'
         'name': 'keyword.other.fn.rust'
       }
+      { 'include': '#type' }
+      { 'include': '#identifier' }
     ]
   }
   # Type declaration
