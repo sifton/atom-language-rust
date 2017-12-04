@@ -147,6 +147,11 @@
     'name': 'entity.name.type.rust'
     'match': '\\b([A-Z][_A-Za-z0-9]*|_[_A-Za-z0-9]+)\\b'
   }
+  'identifier': {
+    'comment': 'Any identifier not otherwise specified'
+    'name': 'variable.other.rust'
+    'match': '\\b([A-Za-z][_A-Za-z0-9]*|_[_A-Za-z0-9]+)\\b'
+  }
   'type_params': {
     'comment': 'Type parameters'
     'name': 'meta.type_params.rust'
@@ -215,6 +220,7 @@
       { 'include': '#block_comment' }
       { 'include': '#line_doc_comment' }
       { 'include': '#line_comment' }
+      { 'include': '#type' }
     ]
   }
   # Strings
